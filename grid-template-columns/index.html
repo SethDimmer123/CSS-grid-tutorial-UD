@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:200px 300px; /*i use this to setup columns and how many columns i would like to have.*/
+            /*i write the WIDTH OF THE COLUMNS 1st and 2nd*/
+        }
+    </style>
+</head>
+<!--anytime i work with css grid-->
+        <!--i need 2 things
+        i need a PARENT CONTAINER
+    that has display:grid;
+I NEED CHILDREN ITEMS within the parent container-->
+
+<body>
+    <div class="container">
+        <div class="cell">cell 1</div>
+        <div class="cell">cell 1</div>
+    </div>
+</body>
+</html>
