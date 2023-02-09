@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:200px 300px 200px ; /*i use this to setup columns and how many columns i would like to have.*/
+            /*i write the WIDTH OF THE COLUMNS 1st and 2nd*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cell">cell 1</div>
+        <div class="cell">cell 2</div>
+        <div class="cell">cell 3</div>
+        <div class="cell">cell 4</div>
+        <div class="cell">cell 5</div>
+        <div class="cell">cell 6</div>
+        <!-- iMPLCIT GRID- EXPLCILY AND CURRENTLY I HAVE NOT ADDED OR COVERED the values for my rows in css
+            i don't currently have how many rows or the actual width of the rows however
+            if i SPECIFICALLY SAY WHAT KIND OF COLUMNS OR HOW MANY COLUMNS I WOULD WANT
+            THEN CSS GRID WILL CREATE A LAYOUT FOR ME.
+
+            lets say in the scenario above i change my mind and just have 1 column layout only have 
+            200px
+
+            but if i want a 3 column layout then add another 200px after the 300px
+
+            CSS GRID IS SMART IT SAYS I CAN FIT IT IN 2 ROWS
+
+            IF I ADD MORE DIVS THEN I WILL BE BACK TO A 3 ROW LAYOUT
+
+
+            SINCE I HAVE 2 COLUMNS BUT since kept on adding more items
+        css grid will keep on creating rows that match the layout that i wanted which is a 
+    2 column layout in this scenario but i kept on adding divs after the first 2 
+    so css grid will keep on adding rows-->
+    </div>
+</body>
+</html>
