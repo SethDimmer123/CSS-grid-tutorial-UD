@@ -14,11 +14,19 @@
             display: grid;
             grid-template-columns: 1fr 5fr 3fr 1fr; 
             grid-template-rows: 1fr 1fr 1fr;
+
+            /* THIS IS HOW I ADD GAPS IN BETWEEN COLUMNS AND ROWS */
             grid-column-gap: 20px;
             grid-row-gap: 20px;
-            grid-gap:50px;/*applies for both rows and columns
+            /* grid-gap:50px;
+            applies for both rows and columns 
             and i override the previous properties and values i had for the
             rows and columns*/
+
+            grid-gap: 50px 100px; /*this is the shorthand for grid column gap and grid row gap*/
+            /*100px is applied for the column
+            50px is applied for the rows*/
+
         }
     </style>
 </head>
