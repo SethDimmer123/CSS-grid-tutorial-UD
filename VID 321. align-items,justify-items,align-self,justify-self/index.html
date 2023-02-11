@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Tutorial</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+     /* align-items,justify-items --- content within items*/
+    /*align-self,justify-self --- single item content*/
+        .container{
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows:repeat(2,1fr);
+            align-items: flex-start;
+            justify-items: flex-start;
+        }
+
+        /* lets say i want to chnage the content WITHIN cell #1 */
+        .cell-1{
+            justify-self: end;
+            /*now the cell 1 content has been shifted to the RIGHT*/
+            align-self:flex-end;
+
+        }
+
+        /* use justify and align-self to control the INDIVIDUAL ITEM CONTENT */
+
+        /* use justify and align-items to control the content inside of the container as well */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cell cell-1">cell 1</div>
+        <div class="cell cell-2">cell 2</div>
+        <div class="cell cell-3">cell 3</div>
+        <div class="cell cell-4">cell 4</div>
+        <div class="cell cell-5">cell 5</div>
+        <div class="cell cell-6">cell 6</div>
+    </div>
+</body>
+</html>
