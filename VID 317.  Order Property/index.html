@@ -8,40 +8,29 @@
     <link rel="stylesheet" href="./styles.css">
     <style>
 
-            /*Grid Template Areas  */
+            /* Order  */
         .container{
-            /* margin: 7rem; */
-            /* min-height: 100vh; */
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 100px 100px 100px 100px 100px ;
-            grid-template-areas: 
-            "a a b"
-            "a a b"
-            "c c b"
-            "d d d"
-            "e f f"
+            grid-template-rows: 100px 100px ;
         }
         .cell-1{
-            grid-area:a;
-        }
-        .cell-2{
-            grid-area:b;
-        }
-        .cell-3{
-            grid-area: c;
-        }
-        .cell-4{
-            grid-area: d;
-        }
-        .cell-5{
-            grid-area: e;
+            order: 2;/*if i have a positive order i place it at the end of the pack*/
         }
         .cell-6{
-            grid-area: f;
+            order: -1;
+        }
+        .cell-3{
+            order: 4; /*the order is the most positive that is why it cell 3 is at the end*/
+        }
+        .cell-5{
+            order: 3;
         }
 
+        /*lets say i wanted to place cell-5 in between cell 1 and cell 3  */
+        /* we do the order of 3 because that is in between 2 and 4 */
     </style>
+
 </head>
 <body>
     <div class="container">
@@ -54,6 +43,3 @@
     </div>
 </body>
 </html>
-
-<!-- question i need to ask myself -->
-<!--HOW MANY ROWS AND COLUMNS AM I GOING TO HAVE?-->
