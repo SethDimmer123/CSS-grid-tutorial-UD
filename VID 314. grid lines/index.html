@@ -17,6 +17,27 @@
             grid-template-rows: 100px 100px 100px;
             grid-gap: 1rem;  
         }
+        .cell-1{ 
+            /*i want my 1st cell to span all the way from column 
+            line 1 to column line 3*/
+            /* as well as use the 2nd row as well cell spans from row #1 to row line #3 */
+            /* grid-column-start:1;
+            grid-column-end:3; */
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* the cell 1 is spanning 2 columns and 2 rows now */
+
+            /* shorthand for grid lines */
+
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+
+        .cell-4{ /* i also have NEGATIVE VALUES  */
+            grid-column:1/-1;
+        }
+
     </style>
 </head>
 <body>
@@ -31,3 +52,10 @@
     </div>
 </body>
 </html>
+
+<!-- i have 3 columns and ends with a line #4 for my columns  -->
+
+<!--i have 3 rows  that is why it end with #4  -->
+
+
+
